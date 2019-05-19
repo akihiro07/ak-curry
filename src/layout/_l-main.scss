@@ -1,0 +1,18 @@
+#l-main{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  .background{
+    background: $sub-color;
+  }
+  .site-width{
+    width: 68%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  @include bp(sp){
+    .site-width{
+      width: 90%;
+    }
+  }
+}

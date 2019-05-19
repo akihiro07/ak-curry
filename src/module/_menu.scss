@@ -1,0 +1,50 @@
+#menu{
+  color: $sub-color;
+  padding: $space_3l 0px;
+  .menu__title{
+    font-size: $font-size_4l;
+  }
+  .menu__items{
+    overflow: hidden;
+    margin-right: -$space_m;
+    .menu__item{
+      color: $sub-color;
+      display: block;
+      float: left;
+      margin-right: $space_m;
+      margin-bottom: $space_m;
+      width: calc(33.3% - #{$space_m});
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+      .menu__img{
+        .menu__curry{ //imgタグ
+          width: 100%;
+          vertical-align: bottom;
+          border-radius: 25px;
+        }
+      }
+    }
+  }
+  @include bp(sp){
+    .menu__items{
+      overflow: hidden;
+      margin-right: -$space_l;
+      .menu__item{
+        display: block;
+        float: left;
+        margin-right: $space_l;
+        margin-bottom: $space_m;
+        width: calc(50% - #{$space_l});
+        .menu__img{
+          .menu__curry{ //imgタグ
+            width: 100%;
+            vertical-align: bottom;
+            border-radius: 25px;
+          }
+        }
+      }
+    }
+  }
+}

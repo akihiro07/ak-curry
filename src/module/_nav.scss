@@ -1,0 +1,38 @@
+.nav{
+  .nav__items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    .nav__item{
+      font-size: $font-size_xl;
+      .nav__link{
+        color: $sub-color;
+        margin-right: $space_m;
+        text-decoration: none;
+      }
+    }
+  }
+  //レスポンシブデザイン（スマホ用）
+  @include bp(sp){
+    background: rgba(255, 255, 255, 0.9);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -100%; //画面右側に隠した状態
+    padding-top: $space_max;
+    width: 100vw; //vw(viewport width):ビューポートの横幅(画面の横幅)に対する割合
+    height: 100vh;//rem //vh(viewport height):ビューポートの高さ(画面の高さ)に対する割合
+    .nav__items{
+      display: block;
+      text-align: center;
+      .nav__item{
+        font-size: $font-size_4l;
+        padding: $space_m;
+      }
+    }
+    &.nav--active{
+      transform: translateX(-100%);
+    }
+  }
+}

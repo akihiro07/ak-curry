@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>AKI CURRY</title>
+        <link type="text/css" rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+
+    <body>
+        <!-- ========================
+        header
+        ============================= -->
+        <header id="l-header" class="js-head-barnar">
+            <div class="title">
+                <h1 class="title__text">AK CURRY</h1>
+            </div>
+            <!-- ハンバーガーメニュー -->
+            <div class="humbergerMenu js-menu-trigger">
+              <span class="humbergerMenu__bar"></span>
+              <span class="humbergerMenu__bar"></span>
+              <span class="humbergerMenu__bar"></span>
+            </div>
+            <nav class="nav js-nav">
+                <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link js-nav__link" href="#news">NEWS</a></li>
+                    <li class="nav__item"><a class="nav__link js-nav__link" href="#about">ABOUT</a></li>
+                    <li class="nav__item"><a class="nav__link js-nav__link" href="#menu">MENU</a></li>
+                    <li class="nav__item"><a class="nav__link js-nav__link" href="#access">ACCESS</a></li>
+                    <li class="nav__item"><a class="nav__link js-nav__link" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ========================
+        main
+        ============================= -->
+        <main id="l-main">
+            <!-- hero部分 -->
+            <section class="hero js-hero_height">
+                <h2 class="hero__text">NO CURRY<br>NO LIFE</h2>
+            </section>
+
+            <!-- news部分 -->
+            <section id="news" class="site-width">
+                <h2 class="news__title">NEWS</h2>
+                <div class="news__content">
+                    <ul class="news__lists">
+                        <li class="news__list">
+                            <span class="news__date">2019.5.1</span>
+                            <span class="news__text">新元号『令和』記念期間限定メニューが登場！！</span>
+                        </li>
+                        <li class="news__list">
+                            <span class="news__date">2019.4.1</span>
+                            <span class="news__text">春限定メニューが登場！！</span>
+                        </li>
+                        <li class="news__list">
+                            <span class="news__date">2019.4.1</span>
+                            <span class="news__text">新生活応援キャンペーンが期間限定でスタート！！</span>
+                        </li>
+                        <li class="news__list">
+                            <span class="news__date">2019.x.x</span>
+                            <span class="news__text">samplesamplesamplesamplesample</span>
+                        </li>
+                        <li class="news__list">
+                            <span class="news__date">2019.x.x</span>
+                            <span class="news__text">samplesamplesamplesamplesample</span>
+                        </li>
+                        <li class="news__list">
+                            <span class="news__date">2019.x.x</span>
+                            <span class="news__text">samplesamplesamplesamplesample</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- about部分 -->
+            <div class="background">
+                <section id="about" class="site-width">
+                    <h2 class="about__title">ABOUT</h2>
+                    <div class="about__content">
+                        <p class="about__text">
+                            AKIカレーは30年以上受け継ぐ秘伝のルーを使用し、お米も新潟産のこだわりのお米を使用しています。<br>
+                            また、出来るだけ多くの方に楽しんでいただけるようにリーズナブルな値段で提供しています。<br>
+                            是非、ここでしか味わえない特別な味を楽しんでください。
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- menu部分 -->
+            <section id="menu" class="site-width">
+                <h2 class="menu__title">MENU</h2>
+                <div class="menu__items">
+                    <!-- item1 -->
+                    <a class="menu__item js-menu_modal-open" href="">
+                        <div class="menu__img">
+                            <img class="menu__curry" src="./images/akicurry.jpg" alt="">
+                        </div>
+                        <div class="menu__detail">
+                            <p class="menu__name">ビーフカレー</p>
+                            <p class="menu__price">￥600</p>
+                        </div>
+                    </a>
+                    <!-- item2 -->
+                    <a class="menu__item js-menu_modal-open" href="">
+                      <div class="menu__img">
+                          <img class="menu__curry" src="./images/katu.jpg" alt="">
+                      </div>
+                        <div class="menu__detail">
+                            <p class="menu__name">カツカレー</p>
+                            <p class="menu__price">￥900</p>
+                        </div>
+                    </a>
+                    <!-- item3 -->
+                    <a class="menu__item js-menu_modal-open" href="">
+                      <div class="menu__img">
+                          <img class="menu__curry" src="./images/karaage.jpg" alt="">
+                      </div>
+                        <div class="menu__detail">
+                            <p class="menu__name">唐揚げカレー</p>
+                            <p class="menu__price">￥800</p>
+                        </div>
+                    </a>
+                    <!-- item4 -->
+                    <a class="menu__item js-menu_modal-open" href="">
+                      <div class="menu__img">
+                          <img class="menu__curry" src="./images/vegitable.jpg" alt="">
+                      </div>
+                        <div class="menu__detail">
+                            <p class="menu__name">ベジタブルカレー</p>
+                            <p class="menu__price">￥750</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- item1用モーダル -->
+            <div class="modal js-menu_modal-close">
+              <div class="modal__content">
+                  <img class="modal__img" src="./images/akicurry.jpg" alt="">
+                  <div class="modal__detail">
+                      <p class="modal__name">ビーフカレー</p>
+                      <p class="modal__price">￥600</p>
+                  </div>
+              </div>
+            </div>
+            <!-- item2用モーダル -->
+            <div class="modal js-menu_modal-close">
+              <div class="modal__content">
+                  <img class="modal__img" src="./images/katu.jpg" alt="">
+                  <div class="modal__detail">
+                      <p class="modal__name">カツカレー</p>
+                      <p class="modal__price">￥900</p>
+                  </div>
+              </div>
+            </div>
+            <!-- item3用モーダル -->
+            <div class="modal js-menu_modal-close">
+              <div class="modal__content">
+                  <img class="modal__img" src="./images/karaage.jpg" alt="">
+                  <div class="modal__detail">
+                      <p class="modal__name">唐揚げカレー</p>
+                      <p class="modal__price">￥800</p>
+                  </div>
+              </div>
+            </div>
+            <!-- item4用モーダル -->
+            <div class="modal js-menu_modal-close">
+              <div class="modal__content">
+                  <img class="modal__img" src="./images/vegitable.jpg" alt="">
+                  <div class="modal__detail">
+                      <p class="modal__name">ベジタブルカレー</p>
+                      <p class="modal__price">￥750</p>
+                  </div>
+              </div>
+            </div>
+
+            <!-- access部分 -->
+            <div class="background">
+                <section id="access" class="site-width">
+                    <h2 class="access__title">ACCESS</h2>
+                    <div class="access__content">
+                        <div class="access__mapFrame">
+                            <iframe class="access__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.0631231401994!2d139.71179313050752!3d35.724666071917476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d69893d6c43%3A0x585ecbb44e7e8775!2z44CSMTcxLTAwMjIg5p2x5Lqs6YO96LGK5bO25Yy65Y2X5rGg6KKL77yT5LiB55uu77yR77yX!5e0!3m2!1sja!2sjp!4v1557723323060!5m2!1sja!2sjp" width="490" height="280" frameborder="0" style="border:0" allowfullscreen></iframe><!-- TODO: MAPを表示 -->
+                        </div>
+                        <div class="access__info">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th class="access_addr">住所</th>
+                                  <td>東京都豊島区南池袋3丁目17</td>
+                                </tr>
+                                <tr>
+                                  <th class="access__tel">TEL</th>
+                                  <td>03-0000-1111</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- contact部分 -->
+            <section id="contact" class="site-width">
+                <h2 class="contact__title">CONTACT</h2>
+                <div class="contact__content">
+                    <input class="contact__name" type="text" name="name" placeholder="名前">
+                    <input class="contact__email" type="text" name="mail" placeholder="メールアドレス">
+                    <textarea class="contact__detail" name="detail"></textarea>
+                    <button class="contact__submit" type="submit" name="submit">送信</button>
+                </div>
+            </section>
+        </main>
+        <!-- ========================
+        footer
+        ============================= -->
+        <footer id="l-footer">
+            <p class="footer">Copyright © akicurry. All Rights Reserved</p>
+        </footer>
+        <script src="./jquery-3.4.1.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

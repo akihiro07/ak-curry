@@ -1,0 +1,39 @@
+//============================
+// base
+//============================
+@import './base/_normalize.scss';
+@import './base/_generic.scss';
+
+//============================
+// tool
+//============================
+@import './tool/_mixin.scss';
+
+//============================
+// setting
+//============================
+@import './setting/_color.scss';
+@import './setting/_size.scss';
+@import './setting/_space.scss';
+@import './setting/_font-family.scss';
+
+//============================
+// layout
+//============================
+@import './layout/_l-header.scss';
+@import './layout/_l-main.scss';
+@import './layout/_l-footer.scss';
+
+//============================
+// module
+//============================
+@import './module/_title.scss';
+@import './module/_humberger.scss'; //ハンバーガーメニュー用
+@import './module/_nav.scss';
+@import './module/_hero.scss';
+@import './module/_news.scss';
+@import './module/_about.scss';
+@import './module/_menu.scss';
+@import './module/_modal.scss'; //モーダル用
+@import './module/_access.scss';
+@import './module/_contact.scss';

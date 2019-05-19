@@ -1,0 +1,42 @@
+#contact{
+  padding: $space_3l 0px;
+  .contact__title{
+    color: $sub-color;
+    font-size: $font-size_4l;
+  }
+  .contact__content{
+    .contact__name, .contact__email, .contact__detail{
+      display: block;
+      margin: 0 auto;
+      margin-bottom: $space_l;
+      padding: $space_ss $space_m;
+      width: 50%;
+      border: 3px solid $exception-color;
+    }
+    ::placeholder{ //placeholderの中を操作
+      color: #ccc;
+    }
+    .contact__detail{
+      vertical-align: bottom;
+      min-height: 150px;
+    }
+    .contact__submit{
+      color: $main-color;
+      background: $sub-color;
+      width: 50%;
+      font-size: $font-size_xl;
+      padding: 5px;
+    }
+  }
+  @include bp(sp){
+    .contact__content{
+      .contact__name, .contact__email, .contact__detail{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: $space_l;
+        padding: $space_ss $space_m;
+        width: 100%;
+      }
+    }
+  }
+}

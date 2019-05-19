@@ -1,0 +1,10 @@
+$breakpoints: (
+  tb: 'screen and (max-width:768px)', //タブレット用ブレークポイント
+  sp: 'screen and (max-width:414px)', //スマホ用ブレークポイント
+);
+
+@mixin bp($breakpoint: tb){
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

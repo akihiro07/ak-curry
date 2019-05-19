@@ -1,0 +1,39 @@
+#news{
+  display: flex;
+  justify-content: flex-start;
+  padding: $space_3l 0px;
+  .news__title{
+    color: $sub-color;
+    font-size: $font-size_4l;
+    padding-left: $space_xl;
+    padding-right: $space_xl;
+    border-right: 2px solid $exception-color;
+    width: 25%;
+  }
+  .news__content{
+    width: 75%;
+    .news__lists{
+      text-align: left;
+      list-style: none;
+      overflow-y: scroll;
+      padding-left: $space_3l;
+      padding-right: $space_3l;
+      height: 200px;
+      .news__list{
+        padding: $space_s $space_m;
+        border-bottom: 1.5px solid $exception-color;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+  @include bp(sp){
+    display: block;
+    .news__title{
+      width: 100%;
+      border: none;
+    }
+    .news__content{
+      width: 100%;
+    }
+  }
+}

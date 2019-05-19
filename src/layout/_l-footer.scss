@@ -1,0 +1,14 @@
+#l-footer{
+  background: $exception-color;
+  text-align: center;
+  height: 80px;
+  .footer{
+    line-height: 80px;
+  }
+  @include bp(sp){
+    height: 60px;
+    .footer{
+      line-height: 60px;
+    }
+  }
+}

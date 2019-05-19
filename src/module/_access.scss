@@ -1,0 +1,43 @@
+#access{
+  color: $main-color;
+  padding-top: $space_3l;
+  padding-bottom: $space_5l;
+  .access__title{
+    font-size: $font-size_4l;
+  }
+  .access__content{
+    display: flex;
+    justify-content: flex-start;
+    .access__mapFrame{
+      width: 50%;
+      .access__map{
+        width: 100%;
+        height: 280px;
+      }
+    }
+    .access__info{
+      font-size: $font-size_l;
+      width: 50%;
+      text-align: left;
+      padding-left: $space_5l;
+      box-sizing: border-box;
+      .access__addr, .access__tel{
+        padding-right: $space_l;
+      }
+    }
+  }
+  @include bp(sp){
+    .access__content{
+      display: block;
+      .access__mapFrame{
+        width: 100%;
+      }
+      .access__info{
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
